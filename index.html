@@ -33,7 +33,14 @@
         letter-spacing: 1px;
         box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     }
-
+    .main-photo {
+        width: 100;
+        height: 300px;
+        object-fit: contain;
+        border-radius: 12px;
+        border: 2px solid #8b5a2b;
+        margin-bottom: 15px;
+    }
     h2 {
         text-align: center;
         color: #4b2e13;
@@ -65,6 +72,18 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         transition: all 0.25s ease;
         position: relative;
+    }
+    .status-tag {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: #b00000;
+        color: #fff;
+        padding: 4px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 20px;
+        letter-spacing: 0.5px;
     }
 
     .card:hover {
@@ -115,7 +134,9 @@
 </head>
 <body>
 
-<header>రేనికుంట గ్రామపంచాయతీ ఎన్నికలు 2025</header>
+<header>రేనికుంట గ్రామపంచాయతీ ఎన్నికలు   2025<p style="margin-top: 10px; font-weight: bold;">
+            📅 ఫలితాల తేదీ: డిసెంబర్ 14, 2025
+        </p></header>
 
 <h2 id="sarpanch">సర్పంచ్ అభ్యర్థులు</h2>
 
@@ -123,8 +144,10 @@
 
     <!-- అభ్యర్థి 1 -->
     <div class="card">
+        <span class="status-tag">PENDING</span>
+
         <!-- <img class="main-photo" src="./sarpanch/anji/anji.jpeg" alt="ఎలుక అంజి"> -->
-        <h3>ఎలుక అంజి</h3>
+        <h3>ఎలుక అంజి </h3>
         <p>ఎన్నికల గుర్తు:</p>
         <div class="symbol-wrapper">
             <img src="./sarpanch/anji/symbol.png" class="symbol-img" alt="ఎలుక అంజి గుర్తు">
@@ -134,8 +157,10 @@
 
     <!-- అభ్యర్థి 2 -->
     <div class="card">
+        <span class="status-tag">PENDING</span>
+
         <!-- <img class="main-photo" src="./sarpanch/raju/raju.jpeg" alt="ఎలుక రాజు"> -->
-        <h3>ఎలుక రాజు</h3>
+        <h3>ఎలుక రాజు </h3>
         <p>ఎన్నికల గుర్తు:</p>
         <div class="symbol-wrapper">
             <img src="./sarpanch/raju/symbol.jpg" class="symbol-img" alt="ఎలుక రాజు గుర్తు">
@@ -145,13 +170,36 @@
 
     <!-- అభ్యర్థి 3 -->
     <div class="card">
-        <!-- <img class="main-photo" src="./sarpanch/komaraiah/pic.jpeg" alt="బోయిని కొమరయ్య"> -->
+        <span class="status-tag">PENDING</span>
+
+        <!-- <img class="main-photo" src="./sarpanch/komaraiah/komaraiah.jpeg" alt="బోయిని కొమరయ్య"> -->
         <h3>బోయిని కొమరయ్య</h3>
         <p>ఎన్నికల గుర్తు:</p>
         <div class="symbol-wrapper">
             <img src="./sarpanch/komaraiah/symbol.png" class="symbol-img" alt="కొమరయ్య గుర్తు">
         </div>
         <!-- <a class="btn" href="komaraiah.html">వివరాలు →</a> -->
+    </div>
+
+
+</div>
+
+<h2 id="wards">వార్డు సభ్యుల ఫలితాలు</h2>
+
+<div class="container">
+
+    <div class="card">
+        <h3>గెలిచిన వార్డు సభ్యులు</h3>
+        <!-- <p style="font-size: 16px;">(వార్డు నంబర్లు తెలియదు)</p> -->
+
+        <ul style="list-style: none; padding: 0; font-size: 18px; color: #4b2e13;">
+            <li>🏆    ల్యాగల దేవేందర్ రెడ్డి - (BRS)</li>
+            <li>🏆    తాళ్లపెల్లి శ్రీను - (CONG)</li>
+            <li>🏆    తమనవేని రాములు - (CONG)</li>
+            <li>🏆    పోతుగంటి అనిల్ </li>
+        </ul>
+
+
     </div>
 
 </div>
